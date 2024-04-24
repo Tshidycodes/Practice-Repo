@@ -11,8 +11,22 @@ let countElement = document.getElementById("count-el");
 let incrementBtn = document.querySelector("#increment-btn");
 
 function increment() {
-  count = count + 1;
+  count += 1;
   countElement.innerText = count;
 }
 
 incrementBtn.addEventListener("click", increment);
+
+let saveBtn = document.querySelector("#save-btn");
+let saveEl = document.getElementById("save-el");
+
+function save() {
+  let countStr = ` ${count} -`;
+  //Render the variable in the saveEl using innerText
+  saveEl.textContent += countStr;
+  //set the count to zero
+  count = 0;
+  countElement.innerText = 0;
+}
+
+saveBtn.addEventListener("click", save);
