@@ -30,7 +30,8 @@ button {
   border-radius: 5px;
 }
 
-#increment-btn {
+#increment-btn,
+#decrement-btn {
   background: darkred;
 }
 
