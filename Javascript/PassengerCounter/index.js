@@ -17,6 +17,13 @@ function increment() {
 
 incrementBtn.addEventListener("click", increment);
 
+let decrementBtn = document.querySelector("#decrement-btn");
+function decrement() {
+  count -= 1;
+  countElement.innerText = count;
+}
+
+decrementBtn.addEventListener("click", decrement);
 let saveBtn = document.querySelector("#save-btn");
 let saveEl = document.getElementById("save-el");
 
